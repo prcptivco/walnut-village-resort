@@ -1,0 +1,203 @@
+{
+    "tariff_meta": {
+        "currency": "INR",
+        "gst_note": "GST will be charged additionally on this tariff",
+        "meal_plans": {
+            "EPI": {
+                "label": "EPI",
+                "full_name": "European Plan Inclusive",
+                "description": "Room only — no meals included."
+            },
+            "CPAI": {
+                "label": "CPAI",
+                "full_name": "Continental Plan All Inclusive",
+                "description": "Room + Breakfast included."
+            },
+            "MAPAI": {
+                "label": "MAPAI",
+                "full_name": "Modified American Plan All Inclusive",
+                "description": "Room + Breakfast + Dinner included."
+            },
+            "APAI": {
+                "label": "APAI",
+                "full_name": "American Plan All Inclusive",
+                "description": "Room + All meals (Breakfast, Lunch & Dinner) included."
+            }
+        }
+    },
+    "rooms": [
+        {
+            "id": "deluxe",
+            "name": "Deluxe",
+            "slug": "deluxe-room",
+            "short_description": "Warmly furnished with mountain or garden views, a private balcony, and all modern comforts for a peaceful Kashmiri stay.",
+            "long_description": "Our Deluxe Rooms offer a serene retreat with views of the surrounding garden and Himalayan foothills. Each room is tastefully furnished with a flat-screen TV, electric kettle, desk, and wardrobe. The private en-suite bathroom comes with a bidet and complimentary toiletries. Step out onto your balcony for a morning Kahwa with mountain air.",
+            "max_guests": 2,
+            "beds": "1 Double or Twin Bed",
+            "features": [
+                "Mountain / garden view",
+                "Flat-screen TV",
+                "Air conditioning",
+                "Electric tea pot",
+                "Desk & wardrobe",
+                "En-suite bathroom with bidet",
+                "Free toiletries",
+                "Free WiFi"
+            ],
+            "images": [
+                {
+                    "src": "/images/rooms/deluxe/deluxe-3.jpeg",
+                    "alt": "Deluxe Room — bedroom view",
+                    "caption": "Bedroom"
+                },
+                {
+                    "src": "/images/rooms/deluxe/deluxe-2.jpeg",
+                    "alt": "Deluxe Room — bathroom",
+                    "caption": "En-suite Bathroom"
+                },
+                {
+                    "src": "/images/rooms/deluxe/deluxe-1.jpeg",
+                    "alt": "Deluxe Room — Overview",
+                    "caption": "Overview"
+                },
+                {
+                    "src": "/images/rooms/deluxe/deluxe-4.jpeg",
+                    "alt": "Deluxe Room — Bathroom Details",
+                    "caption": "Bathroom Details"
+                }
+            ],
+            "rates": {
+                "EPI": 4000,
+                "CPAI": 5000,
+                "MAPAI": 6000,
+                "APAI": 7500
+            }
+        },
+        {
+            "id": "riverview-premium",
+            "name": "Riverview Premium with Balcony",
+            "slug": "riverview-premium",
+            "short_description": "Wake up to the sound of the Lidder River with a dedicated balcony that frames the valley in every season.",
+            "long_description": "The Riverview Premium rooms face the Lidder River, offering an unobstructed view from your private balcony. These rooms are a step up in size and aspect — ideal for couples or guests who want nature's soundtrack with every sunrise. Furnished with premium textiles, a flat-screen TV, electric kettle, and a spacious en-suite with bidet.",
+            "max_guests": 2,
+            "beds": "1 Double Bed",
+            "features": [
+                "Direct Lidder River view",
+                "Private balcony",
+                "Flat-screen TV",
+                "Air conditioning",
+                "Electric tea pot",
+                "Desk & wardrobe",
+                "En-suite bathroom with bidet",
+                "Free toiletries",
+                "Free WiFi"
+            ],
+            "images": [
+                {
+                    "src": "/images/rooms/riverview/riverview-1.jpeg",
+                    "alt": "Riverview Premium — bedroom with river view",
+                    "caption": "Riverview Bedroom"
+                },
+                {
+                    "src": "/images/rooms/riverview/riverview-2.jpeg",
+                    "alt": "Riverview Premium — balcony overlooking Lidder River",
+                    "caption": "Balcony & Lidder River"
+                },
+                {
+                    "src": "/images/rooms/riverview/riverview-3.jpeg",
+                    "alt": "Riverview Premium — bathroom",
+                    "caption": "Bathroom"
+                },
+                {
+                    "src": "/images/rooms/riverview/riverview-4.jpeg",
+                    "alt": "Riverview Premium — Mountain View",
+                    "caption": "Mountain & River View"
+                }
+            ],
+            "rates": {
+                "EPI": 5000,
+                "CPAI": 6000,
+                "MAPAI": 7500,
+                "APAI": 8500
+            }
+        },
+        {
+            "id": "premium-studio",
+            "name": "Premium Studio with Balcony & Bathtub",
+            "slug": "premium-studio",
+            "short_description": "The resort's finest room, a studio layout with a soaking bathtub, large balcony, and premium finishes throughout.",
+            "long_description": "The Premium Studio is Walnut Village's most indulgent room category. A studio-style layout gives you a generous living and sleeping space, while the private lounge/balcony opens to panoramic mountain views. The highlight: a soaking bathtub set against the view, perfect for unwinding after a day on the Pahalgam trails. Premium textiles, full modern amenities, and discreet room service complete the experience.",
+            "max_guests": 2,
+            "beds": "1 King Bed",
+            "features": [
+                "Panoramic mountain / valley view",
+                "Large private balcony",
+                "Soaking bathtub",
+                "Separate shower",
+                "Studio layout (living + sleeping area)",
+                "Flat-screen TV",
+                "Air conditioning",
+                "Electric tea pot",
+                "Desk & wardrobe",
+                "Premium en-suite bathroom with bidet",
+                "Free toiletries",
+                "Free WiFi"
+            ],
+            "images": [
+                {
+                    "src": "/images/rooms/studio/premium-1.jpeg",
+                    "alt": "Premium Studio — living area",
+                    "caption": "Living Area"
+                },
+                {
+                    "src": "/images/rooms/studio/premium-3.jpeg",
+                    "alt": "Premium Studio — soaking bathtub",
+                    "caption": "Soaking Bathtub"
+                },
+                {
+                    "src": "/images/rooms/studio/premium-2.jpeg",
+                    "alt": "Premium Studio — king bedroom",
+                    "caption": "King Bedroom"
+                },
+                {
+                    "src": "/images/rooms/studio/premium-4.jpeg",
+                    "alt": "Premium Studio — balcony with mountain view",
+                    "caption": "Private Balcony"
+                }
+            ],
+            "rates": {
+                "EPI": 6500,
+                "CPAI": 7500,
+                "MAPAI": 9000,
+                "APAI": 11500
+            }
+        }
+    ],
+    "extras": [
+        {
+            "id": "extra-bed",
+            "label": "Extra Bed",
+            "description": "Additional rollaway bed with linen, pillow, and blanket. Suitable for a child or third adult guest.",
+            "rates": {
+                "EPI": "FOC",
+                "CPAI": 750,
+                "MAPAI": 1500,
+                "APAI": 2800
+            },
+            "note": "FOC = Free of Charge (no meals included for extra bed under EPI)"
+        },
+        {
+            "id": "cwob",
+            "label": "CwoB",
+            "full_name": "Child without Bed",
+            "description": "Child sharing the room without an extra bed. Age limit and meal inclusion vary by plan.",
+            "rates": {
+                "EPI": "FOC",
+                "CPAI": 500,
+                "MAPAI": 750,
+                "APAI": 1500
+            },
+            "note": "FOC = Free of Charge under EPI. Applicable for children below 12 years sharing parent's bed."
+        }
+    ]
+}
