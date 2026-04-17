@@ -1,4 +1,4 @@
-import tariffData from "../../tarrif.json";
+import tariffData from "../tarrif.json";
 
 export default function sitemap() {
   const baseUrl = "https://www.walnutvillageresort.com";
