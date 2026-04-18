@@ -4,7 +4,7 @@ export default function sitemap() {
   const baseUrl = "https://www.walnutvillageresort.com";
 
   // Define core static routes
-  const staticRoutes = ["", "/rooms", "/dining", "/contact", "/amenities", "/gallery", "/story"].map((route) => ({
+  const staticRoutes = ["", "/rooms", "/dining", "/booking", "/contact", "/amenities", "/gallery", "/story"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",

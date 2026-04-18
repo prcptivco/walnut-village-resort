@@ -4,7 +4,7 @@ import ClientLayout from "./components/ClientLayout";
 export const metadata = {
   metadataBase: new URL("https://www.walnutvillageresort.com"),
   title: {
-    default: "Walnut Village Resort — Movera, Pahalgam, Kashmir",
+    default: "Walnut Village Resort | Luxury Hotel in Pahalgam",
     template: "%s | Walnut Village Resort",
   },
   description:
@@ -14,14 +14,14 @@ export const metadata = {
   authors: [{ name: "Walnut Village Resort" }],
   openGraph: {
     type: "website",
-    title: "Walnut Village Resort — Movera, Pahalgam, Kashmir",
+    title: "Walnut Village Resort — Luxury Hotel in Pahalgam",
     description:
       "Stay at Walnut Village Resort in Movera, Pahalgam. 16 rooms, Himalayan views, garden, hot tub, restaurant, and free parking — your gateway to Baisaran, Betaab Valley & the Lidder River.",
     url: "https://www.walnutvillageresort.com",
     siteName: "Walnut Village Resort",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Walnut Village Resort — Movera, Pahalgam, Kashmir",
+    title: "Walnut Village Resort — Luxury Hotel in Pahalgam",
     description:
       "Stay at Walnut Village Resort in Movera, Pahalgam. 16 rooms, Himalayan views, garden, hot tub, restaurant, and free parking — your gateway to Baisaran, Betaab Valley & the Lidder River.",
   },
