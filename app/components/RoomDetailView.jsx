@@ -55,6 +55,9 @@ const RoomDetailView = ({ room }) => {
                     alt={img.alt}
                     onError={() => handleImageError(idx)}
                     className="w-full h-auto object-cover block"
+                    loading={idx === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={idx === 0 ? "high" : "auto"}
                   />
                 ) : (
                   <div className="w-full aspect-video flex flex-col items-center justify-center bg-[#1A0F0A] text-white p-12 text-center border-b border-white/10">

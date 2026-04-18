@@ -27,6 +27,7 @@ export default function GalleryView() {
                   alt={`Gallery image ${i + 1}`}
                   className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-[#2C1810]/0 group-hover:bg-[#2C1810]/20 transition-colors duration-500"></div>
               </div>

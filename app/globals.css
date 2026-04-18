@@ -36,8 +36,8 @@ html {
 
 /* Font families */
 .font-serif {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-playfair), serif;
 }
 .font-sans {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }

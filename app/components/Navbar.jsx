@@ -50,7 +50,7 @@ export default function Navbar() {
             href="/"
             className="z-50 relative flex items-center"
           >
-            <img src="/logo.png" alt={HOTEL_DATA.hotel.name} className="h-12 w-auto" />
+            <img src="/logo.png" alt={HOTEL_DATA.hotel.name} className="h-12 w-auto" fetchPriority="high" />
           </Link>
 
           <div

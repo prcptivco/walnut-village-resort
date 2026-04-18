@@ -45,6 +45,8 @@ export default function RoomsView() {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                     className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-[1.5s] ease-in-out group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {/* Fallback Placeholder */}
                   <div className="hidden w-full h-[400px] md:h-[500px] flex-col items-center justify-center bg-[#1A0F0A] text-white p-12 text-center">

@@ -30,6 +30,8 @@ export default function Footer() {
               src="/logo.png" 
               alt={HOTEL_DATA.hotel.name} 
               className="h-24 w-auto brightness-0 invert" 
+              loading="lazy"
+              decoding="async"
             />
           </Link>
           <p className="text-sm leading-relaxed max-w-xs">
@@ -135,7 +137,7 @@ export default function Footer() {
         <span>
           &copy; {new Date().getFullYear()} {HOTEL_DATA.hotel.name}. All rights reserved.
         </span>
-        <div className="opacity-50" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+        <div className="opacity-50" style={{ fontFamily: "var(--font-space-grotesk), sans-serif" }}>
           Designed & Developed by{" "}
           <a
             href="https://prcptiv.com"

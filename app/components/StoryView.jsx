@@ -20,6 +20,8 @@ export default function StoryView() {
                 src="/images/hero/hero-1.jpeg"
                 alt="Hotel Exterior"
                 className="w-full h-[700px] object-cover transition-transform duration-700 group-hover:scale-105"
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-0 border-[16px] border-[#F9F6F0]/50 pointer-events-none"></div>
             </div>

@@ -36,6 +36,8 @@ const RoomsTeaser = () => (
                     e.target.nextSibling.style.display = 'flex';
                   }}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {/* Fallback Placeholder */}
                 <div className="hidden w-full h-full flex flex-col items-center justify-center bg-[#1A0F0A] text-white p-12 text-center absolute inset-0">

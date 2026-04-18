@@ -34,15 +34,15 @@ export default function DiningView() {
         <FadeIn delay={200}>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-24 h-auto md:h-[600px]">
             <div className="md:col-span-6 lg:col-span-5 h-[300px] md:h-full">
-              <img src={images[0]} alt="Cafe atmosphere" className="w-full h-full object-cover rounded-sm shadow-md" />
+              <img src={images[0]} alt="Cafe atmosphere" className="w-full h-full object-cover rounded-sm shadow-md" loading="lazy" decoding="async" />
             </div>
             <div className="md:col-span-6 lg:col-span-7 grid grid-rows-2 gap-4 h-[600px] md:h-full">
               <div className="h-full">
-                <img src={images[1]} alt="Coffee and treats" className="w-full h-full object-cover rounded-sm shadow-md" />
+                <img src={images[1]} alt="Coffee and treats" className="w-full h-full object-cover rounded-sm shadow-md" loading="lazy" decoding="async" />
               </div>
               <div className="grid grid-cols-2 gap-4 h-full">
-                <img src={images[2]} alt="Dining setup" className="w-full h-full object-cover rounded-sm shadow-md" />
-                <img src={images[3]} alt="Scenic view" className="w-full h-full object-cover rounded-sm shadow-md" />
+                <img src={images[2]} alt="Dining setup" className="w-full h-full object-cover rounded-sm shadow-md" loading="lazy" decoding="async" />
+                <img src={images[3]} alt="Scenic view" className="w-full h-full object-cover rounded-sm shadow-md" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
