@@ -7,11 +7,11 @@ import { Calendar } from "lucide-react";
 import { ModalProvider, useModals } from "../context/ModalContext";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import FloatingBookPill from "./FloatingBookPill";
 import dynamic from "next/dynamic";
 
 const BookingModal = dynamic(() => import("./BookingModal"), { ssr: false });
 const LegalModal = dynamic(() => import("./LegalModal"), { ssr: false });
+const FloatingBookPill = dynamic(() => import("./FloatingBookPill"), { ssr: false });
 
 function LayoutInner({ children }) {
   const pathname = usePathname();

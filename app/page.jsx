@@ -1,9 +1,11 @@
 import Hero from "./components/Hero";
-import RoomsTeaser from "./components/RoomsTeaser";
-import AmenitiesHighlights from "./components/AmenitiesHighlights";
-import TestimonialsCarousel from "./components/TestimonialsCarousel";
-import MDMessage from "./components/MDMessage";
-import StoryTeaser from "./components/StoryTeaser";
+import dynamic from "next/dynamic";
+
+const RoomsTeaser = dynamic(() => import("./components/RoomsTeaser"));
+const AmenitiesHighlights = dynamic(() => import("./components/AmenitiesHighlights"));
+const TestimonialsCarousel = dynamic(() => import("./components/TestimonialsCarousel"));
+const MDMessage = dynamic(() => import("./components/MDMessage"));
+const StoryTeaser = dynamic(() => import("./components/StoryTeaser"));
 
 export default function Home() {
   return (
