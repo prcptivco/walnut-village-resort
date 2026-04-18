@@ -34,7 +34,7 @@ export const metadata = {
       "Stay at Walnut Village Resort in Movera, Pahalgam. 16 rooms, Himalayan views, garden, hot tub, restaurant, and free parking — your gateway to Baisaran, Betaab Valley & the Lidder River.",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
