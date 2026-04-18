@@ -18,8 +18,26 @@ export const HOTEL_DATA = {
       { name: "Rafting Point (Lidder River)", dist: "~1 km" },
     ],
   },
+  md_message: {
+    section_label: "A Message from Our Managing Director",
+    body: "There was never a plan to just build a hotel.\n\nWhat you see here was created with a deeper intention — to build a space where people can slow down, breathe, and feel something real again.\n\nIn a world that constantly pushes us to move faster, do more, and chase endlessly, I have always believed in the opposite. I believe in unhurried mornings, meaningful conversations, warm meals shared with intention, and moments where you don't feel the need to be anywhere else.\n\nWalnut Village Resort, and our open-air café Brookside, were built around that belief.\n\nEvery corner here is designed to feel warm, honest, and grounding. Whether it's the quiet of the mountains, the comfort of your room, or the simple joy of sitting with a cup of coffee by the stream — my hope is that you feel at ease here, not just as a guest, but as someone who belongs.\n\nThis is not just a place to stay.\n\nIt's a space to reconnect — with yourself, with nature, and with the people you come here with.\n\nThank you for being here.\n\nI hope you carry a little bit of this calm back with you.",
+    sign_off: "Warmly,",
+    designation: "Managing Director",
+    name: "Emaad Ibni Umar"
+  },
+  about: {
+    headline: "A Place Designed to Be Felt",
+    body: "Set quietly within the mountains, Walnut Village Resort is an expression of refined simplicity.\n\nHere, luxury is not defined by excess, but by the rare privilege of stillness — of space, of silence, of time that feels entirely your own.\n\nEach element has been carefully considered. Natural textures, warm light, and open views come together to create an atmosphere that is both intimate and expansive. Nothing feels hurried. Nothing feels out of place.\n\nAt Walnut, the experience unfolds gently. Mornings arrive unannounced, evenings linger a little longer, and the world beyond feels distant.\n\nBrookside, our open-air café, carries the same philosophy — a place where moments are savoured slowly, and the simplest rituals become meaningful.\n\nThis is not a destination built to impress.\n\nIt is a place designed to be felt.\n\nA quiet retreat for those who seek less noise, more presence, and a deeper kind of luxury — one that stays with you, long after you leave.",
+    cafe: {
+      name: "Brookside",
+      type: "Open-air café",
+      tagline: "A place where moments are savoured slowly, and the simplest rituals become meaningful."
+    }
+  },
   contact: {
     phones: ["+91 88997 79869", "+91 88999 01175"],
+    queries_phone: "+91 8899779869",
+    queries_label: "For queries & reservations",
     email: "reservations@walnutvillageresort.com",
     address: "Awura Road, Walnut Village Resort, Movera, Pahalgam, Anantnag, Jammu & Kashmir 192401, India",
   },
@@ -76,6 +94,64 @@ export const HOTEL_DATA = {
   policies: {
     checkin: "14:00",
     checkout: "11:00",
+    reservation_cancellation_refund: {
+      intro: "We encourage our guests to choose a plan that aligns with their travel flexibility. If you have any questions, our team is always here to help.",
+      rates: [
+        {
+          id: "flexible",
+          name: "Flexible Rate",
+          tag: "Recommended",
+          rules: [
+            "Free cancellation up to 7 days prior to check-in",
+            "If cancelled within 7 days of arrival, 1 night will be charged",
+            "In case of no-show, 100% of the booking amount will be charged"
+          ]
+        },
+        {
+          id: "semi-flexible",
+          name: "Semi-Flexible Rate",
+          tag: null,
+          rules: [
+            "Free cancellation up to 14 days prior to check-in",
+            "If cancelled within 14 days, 50% of the total booking amount will be charged",
+            "No-show will be charged 100% of the booking amount"
+          ]
+        },
+        {
+          id: "non-refundable",
+          name: "Non-Refundable Rate",
+          tag: null,
+          rules: [
+            "No cancellation or modification allowed",
+            "100% of the booking amount is charged at the time of reservation",
+            "This rate is offered at a lower price for guests with fixed travel plans"
+          ]
+        }
+      ],
+      additional_policies: [
+        {
+          id: "early-departure",
+          title: "Early Departures",
+          body: "In case of early check-out after arrival, no refund will be applicable for unused nights."
+        },
+        {
+          id: "date-modifications",
+          title: "Date Modifications",
+          body: "Date changes are subject to availability and rate differences. Requests must be made at least 7 days prior to arrival."
+        },
+        {
+          id: "refund-processing",
+          title: "Refund Processing",
+          body: "Eligible refunds will be processed within 7–10 working days. Refund timelines may vary depending on your payment method."
+        },
+        {
+          id: "force-majeure",
+          title: "Force Majeure / Exceptional Cases",
+          body: "In rare cases (natural disruptions, emergencies), we aim to be understanding and may offer date changes, or credit for future stays, subject to management approval."
+        }
+      ],
+      sign_off: "Warm regards,\nWalnut Village Resort"
+    }
   },
   external_links: {
     booking_com: "https://www.booking.com/hotel/in/walnut-village-resort.en-gb.html?aid=2127562&label=metagha-link-MRIN-hotel-15934410_dev-desktop_los-1_bw-5_dow-Tuesday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-_mcid-10_ppa-0_clrid-0_ad-0_gstkid-0_checkin-20260421_ppt-&sid=c88fb04c73001b087e0e3cc24d4fdd01&all_sr_blocks=1593441003_430394561_2_1_0&checkin=2026-04-21&checkout=2026-04-22&dest_id=15934410&dest_type=hotel&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=1593441003_430394561_2_1_0&hpos=1&matching_block_id=1593441003_430394561_2_1_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1593441003_430394561_2_1_0__600000&srepoch=1776342995&srpvid=408658a34b08003f&type=total&ucfs=1&",

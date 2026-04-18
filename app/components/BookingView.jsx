@@ -1,12 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import { MessageCircle, Check, ExternalLink } from "lucide-react";
 import { HOTEL_DATA } from "../data/hotel";
 import FadeIn from "./FadeIn";
 import SectionTitle from "./SectionTitle";
+import tariffData from "../../tarrif.json";
 
 export default function BookingView() {
-  const whatsappMessage = `Hi, I am interested in booking a stay at ${HOTEL_DATA.hotel.name}. Please share availability and rates.`;
+  const [selectedRoom, setSelectedRoom] = useState("");
+  const [selectedMealPlan, setSelectedMealPlan] = useState("");
+
+  let whatsappMessage = `Hi, I am interested in booking a stay at ${HOTEL_DATA.hotel.name}.`;
+  if (selectedRoom) whatsappMessage += `\nRoom: ${selectedRoom}`;
+  if (selectedMealPlan) whatsappMessage += `\nMeal Plan: ${selectedMealPlan}`;
+  whatsappMessage += `\n\nPlease share availability and rates.`;
+
   const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[1]
     .replace(/\s/g, "")
     .replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -48,17 +57,36 @@ export default function BookingView() {
                   direct-booking offers.
                 </p>
 
-                <ul className="space-y-4 mb-10 text-sm text-[#D7C9B8]">
-                  <li className="flex items-center gap-3">
-                    <Check size={16} /> Best Rate Guarantee
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Check size={16} /> Instant Confirmation
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Check size={16} /> Personalized Requests
-                  </li>
-                </ul>
+                <div className="mb-8 space-y-4 text-left">
+                  <div>
+                    <label htmlFor="view-room-select" className="block text-xs uppercase tracking-widest text-[#D7C9B8] mb-1">Select Room</label>
+                    <select
+                      id="view-room-select"
+                      value={selectedRoom}
+                      onChange={(e) => setSelectedRoom(e.target.value)}
+                      className="w-full border-b border-[#D7C9B8]/50 py-2 focus:border-[#D7C9B8] focus:outline-none font-serif bg-transparent text-white text-sm"
+                    >
+                      <option className="text-black" value="">Any Room</option>
+                      {tariffData.rooms.map((room) => (
+                        <option className="text-black" key={room.id} value={room.name}>{room.name}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="view-meal-plan-select" className="block text-xs uppercase tracking-widest text-[#D7C9B8] mb-1">Select Meal Plan</label>
+                    <select
+                      id="view-meal-plan-select"
+                      value={selectedMealPlan}
+                      onChange={(e) => setSelectedMealPlan(e.target.value)}
+                      className="w-full border-b border-[#D7C9B8]/50 py-2 focus:border-[#D7C9B8] focus:outline-none font-serif bg-transparent text-white text-sm"
+                    >
+                      <option className="text-black" value="">Any Meal Plan</option>
+                      {Object.values(tariffData.tariff_meta.meal_plans).map((plan) => (
+                        <option className="text-black" key={plan.label} value={plan.label}>{plan.label} - {plan.full_name}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
               </div>
 
               <a

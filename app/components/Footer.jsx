@@ -11,6 +11,7 @@ export default function Footer() {
   const footerLinks = [
     { label: "Home", href: "/" },
     { label: "Rooms", href: "/rooms" },
+    { label: "Dining", href: "/dining" },
     { label: "Amenities", href: "/amenities" },
     { label: "Gallery", href: "/gallery" },
     { label: "About Us", href: "/story" },
@@ -60,7 +61,7 @@ export default function Footer() {
             <li className="flex gap-4">
               <Phone size={16} className="shrink-0 mt-1" />
               <div className="flex flex-col gap-1">
-                <span>{HOTEL_DATA.contact.phones[0]} (General)</span>
+                <span>{HOTEL_DATA.contact.queries_phone} ({HOTEL_DATA.contact.queries_label})</span>
                 <span>{HOTEL_DATA.contact.phones[1]} (Reservations)</span>
               </div>
             </li>

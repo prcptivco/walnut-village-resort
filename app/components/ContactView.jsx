@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Phone, Mail } from "lucide-react";
 import { HOTEL_DATA } from "../data/hotel";
 import SectionTitle from "./SectionTitle";
@@ -8,6 +9,31 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 
 export default function ContactView() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.message) {
+      alert("Please fill in your name and message.");
+      return;
+    }
+    
+    const whatsappMessage = `*New Query from Website*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email || "Not provided"}%0A*Phone:* ${formData.phone || "Not provided"}%0A*Message:* ${formData.message}`;
+    const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.queries_phone.replace(/\s/g, "").replace("+", "")}?text=${whatsappMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+  };
+
   const inputAnimationProps = {
     whileFocus: { scale: 1.02, backgroundColor: "rgba(249, 246, 240, 0.5)" },
     transition: { duration: 0.2 },
@@ -23,7 +49,7 @@ export default function ContactView() {
               Have a question or special request? Send us a message and our
               concierge team will respond shortly.
             </p>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="space-y-1">
                 <label htmlFor="name" className="sr-only">
                   Your Name
@@ -32,7 +58,10 @@ export default function ContactView() {
                   {...inputAnimationProps}
                   id="name"
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your Name *"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
                   autoComplete="name"
                   className="w-full border-b border-[#D7C9B8] py-3 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent text-[#2C1810]"
                 />
@@ -46,6 +75,8 @@ export default function ContactView() {
                   id="email"
                   type="email"
                   placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
                   autoComplete="email"
                   className="w-full border-b border-[#D7C9B8] py-3 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent text-[#2C1810]"
                 />
@@ -59,6 +90,8 @@ export default function ContactView() {
                   id="phone"
                   type="tel"
                   placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
                   autoComplete="tel"
                   className="w-full border-b border-[#D7C9B8] py-3 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent text-[#2C1810]"
                 />
@@ -70,20 +103,23 @@ export default function ContactView() {
                 <motion.textarea
                   {...inputAnimationProps}
                   id="message"
-                  placeholder="Your Message"
+                  placeholder="Your Message *"
+                  required
                   rows="4"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full border-b border-[#D7C9B8] py-3 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent resize-none text-[#2C1810]"
                 ></motion.textarea>
               </div>
-              <Button primary type="button" className="w-full">
-                Send Message
+              <Button primary type="submit" className="w-full">
+                Send Message via WhatsApp
               </Button>
             </form>
             <div className="mt-12 space-y-4 text-sm text-[#8D6E63]">
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-4">
                   <Phone size={16} />{" "}
-                  <span>{HOTEL_DATA.contact.phones[0]} (General Queries)</span>
+                  <span>{HOTEL_DATA.contact.queries_phone} ({HOTEL_DATA.contact.queries_label})</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone size={16} className="opacity-0" />{" "}

@@ -5,12 +5,21 @@ import { X, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { HOTEL_DATA } from "../data/hotel";
 
+import { useState } from "react";
+import tariffData from "../../tarrif.json";
+
 export default function BookingModal({ isOpen, onClose }) {
   const router = useRouter();
+  const [selectedRoom, setSelectedRoom] = useState("");
+  const [selectedMealPlan, setSelectedMealPlan] = useState("");
 
   if (!isOpen) return null;
 
-  const whatsappMessage = `Hi, I am interested in booking a stay at ${HOTEL_DATA.hotel.name}. Please share availability and rates.`;
+  let whatsappMessage = `Hi, I am interested in booking a stay at ${HOTEL_DATA.hotel.name}.`;
+  if (selectedRoom) whatsappMessage += `\nRoom: ${selectedRoom}`;
+  if (selectedMealPlan) whatsappMessage += `\nMeal Plan: ${selectedMealPlan}`;
+  whatsappMessage += `\n\nPlease share availability and rates.`;
+
   const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[1]
     .replace(/\s/g, "")
     .replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -51,6 +60,37 @@ export default function BookingModal({ isOpen, onClose }) {
           <p className="text-[#5D4037] text-sm mb-6 font-light text-center">
             For the fastest service and best rates, chat with us directly.
           </p>
+
+          <div className="mb-6 space-y-4 text-left">
+            <div>
+              <label htmlFor="room-select" className="block text-xs uppercase tracking-widest text-[#8D6E63] mb-1">Select Room</label>
+              <select
+                id="room-select"
+                value={selectedRoom}
+                onChange={(e) => setSelectedRoom(e.target.value)}
+                className="w-full border-b border-[#D7C9B8] py-2 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent text-[#2C1810] text-sm"
+              >
+                <option value="">Any Room</option>
+                {tariffData.rooms.map((room) => (
+                  <option key={room.id} value={room.name}>{room.name}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="meal-plan-select" className="block text-xs uppercase tracking-widest text-[#8D6E63] mb-1">Select Meal Plan</label>
+              <select
+                id="meal-plan-select"
+                value={selectedMealPlan}
+                onChange={(e) => setSelectedMealPlan(e.target.value)}
+                className="w-full border-b border-[#D7C9B8] py-2 focus:border-[#2C1810] focus:outline-none font-serif bg-transparent text-[#2C1810] text-sm"
+              >
+                <option value="">Any Meal Plan</option>
+                {Object.values(tariffData.tariff_meta.meal_plans).map((plan) => (
+                  <option key={plan.label} value={plan.label}>{plan.label} - {plan.full_name}</option>
+                ))}
+              </select>
+            </div>
+          </div>
 
           <motion.a
             whileHover={{ scale: 1.02 }}

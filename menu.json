@@ -1,0 +1,252 @@
+{
+    "cafe": {
+        "name": "Brookside",
+        "type": "Open-air café"
+    },
+    "menu": [
+        {
+            "id": "signature-coffees",
+            "section": "Signature Coffees",
+            "tagline": "Slow brewed. Thoughtfully served.",
+            "items": [
+                {
+                    "id": "mountain-brew",
+                    "name": "Mountain Brew (French Press)",
+                    "description": "Rich, full-bodied coffee, brewed slow for a deep, comforting finish",
+                    "dietary": []
+                },
+                {
+                    "id": "brookside-cold-coffee",
+                    "name": "Brookside Cold Coffee",
+                    "description": "Creamy, smooth, and perfectly chilled",
+                    "dietary": []
+                },
+                {
+                    "id": "hand-beaten-coffee",
+                    "name": "Hand-Beaten Coffee",
+                    "description": "A classic, whipped to a velvety texture",
+                    "dietary": []
+                },
+                {
+                    "id": "pour-over",
+                    "name": "Pour Over (Single Origin)",
+                    "description": "Clean, aromatic, and beautifully balanced",
+                    "dietary": []
+                },
+                {
+                    "id": "cappuccino-latte-americano",
+                    "name": "Cappuccino / Latte / Americano",
+                    "description": "Simple, familiar, perfected",
+                    "dietary": []
+                },
+                {
+                    "id": "hazelnut-vanilla-latte",
+                    "name": "Hazelnut / Vanilla Latte",
+                    "description": "A touch of indulgence in every sip",
+                    "dietary": []
+                }
+            ]
+        },
+        {
+            "id": "artisan-teas-warmers",
+            "section": "Artisan Teas & Warmers",
+            "tagline": "For slow evenings & quiet mornings.",
+            "items": [
+                {
+                    "id": "kashmiri-kahwa",
+                    "name": "Kashmiri Kahwa",
+                    "description": "Infused with saffron, almonds, and warmth",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "classic-masala-chai",
+                    "name": "Classic Masala Chai",
+                    "description": "Comfort in a cup",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "herbal-infusions",
+                    "name": "Herbal Infusions (Chamomile / Green Tea)",
+                    "description": "Light, calming, and restorative",
+                    "dietary": [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                },
+                {
+                    "id": "hot-chocolate",
+                    "name": "Hot Chocolate",
+                    "description": "Rich, smooth, and comforting",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "from-the-grill",
+            "section": "From the Grill",
+            "tagline": "Fire, flavour, and open air.",
+            "items": [
+                {
+                    "id": "grilled-chicken-platter",
+                    "name": "Grilled Chicken Platter",
+                    "description": "Juicy, marinated chicken served with sides",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "veg-grill-platter",
+                    "name": "Veg Grill Platter",
+                    "description": "Seasonal vegetables, charred to perfection",
+                    "dietary": [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                },
+                {
+                    "id": "paneer-tikka",
+                    "name": "Paneer Tikka",
+                    "description": "Soft, smoky, and full of flavour",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "chicken-seekh-kebabs",
+                    "name": "Chicken Seekh Kebabs",
+                    "description": "Spiced, tender, and freshly grilled",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "fish-grill-seasonal",
+                    "name": "Fish Grill (Seasonal)",
+                    "description": "Lightly spiced and flame-cooked",
+                    "dietary": [
+                        "non-vegetarian",
+                        "seasonal"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "small-bites",
+            "section": "Small Bites",
+            "tagline": "To share. Or not.",
+            "items": [
+                {
+                    "id": "crispy-fries",
+                    "name": "Crispy Fries (Classic / Peri-Peri)",
+                    "description": "Golden and addictive",
+                    "dietary": [
+                        "vegetarian",
+                        "vegan"
+                    ]
+                },
+                {
+                    "id": "cheese-corn-balls",
+                    "name": "Cheese Corn Balls",
+                    "description": "Crispy outside, gooey inside",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "chicken-popcorn",
+                    "name": "Chicken Popcorn",
+                    "description": "Light, crunchy, and flavourful",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "garlic-bread",
+                    "name": "Garlic Bread",
+                    "description": "Buttery with a hint of herbs",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "nachos-with-dip",
+                    "name": "Nachos with Dip",
+                    "description": "Simple, satisfying, and sharable",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "artisan-sandwiches",
+            "section": "Artisan Sandwiches",
+            "tagline": "Freshly made. Comfort between two slices.",
+            "items": [
+                {
+                    "id": "grilled-chicken-cheese",
+                    "name": "Grilled Chicken & Cheese",
+                    "description": "Juicy grilled chicken, melted cheese, and a hint of herbs",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "smoked-chicken-sandwich",
+                    "name": "Smoked Chicken Sandwich",
+                    "description": "Lightly smoked chicken with fresh greens and house sauce",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "classic-veggie-cheese",
+                    "name": "Classic Veggie & Cheese",
+                    "description": "Crisp vegetables layered with melted cheese",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "smashed-mutton-sandwich",
+                    "name": "Smashed Mutton Sandwich",
+                    "description": "Bold, spicy, and full of flavour",
+                    "dietary": [
+                        "non-vegetarian"
+                    ]
+                },
+                {
+                    "id": "mushroom-cheese-melt",
+                    "name": "Mushroom & Cheese Melt",
+                    "description": "Sautéed mushrooms with gooey cheese, warm and comforting",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "egg-mayo-sandwich",
+                    "name": "Egg & Mayo Sandwich",
+                    "description": "Simple, creamy, and satisfying",
+                    "dietary": [
+                        "vegetarian"
+                    ]
+                },
+                {
+                    "id": "brookside-special-club",
+                    "name": "Brookside Special Club Sandwich",
+                    "description": "A hearty triple-layered sandwich with chicken, egg, veggies, and signature sauce",
+                    "dietary": [
+                        "non-vegetarian"
+                    ],
+                    "tag": "House Special"
+                }
+            ]
+        }
+    ]
+}

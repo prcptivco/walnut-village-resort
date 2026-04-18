@@ -16,7 +16,10 @@ const LegalModal = ({ title, isOpen, onClose, content }) => {
         onClick={onClose}
         aria-hidden="true"
       ></div>
-      <div className="bg-white w-full max-w-2xl max-h-[85vh] overflow-y-auto relative z-10 shadow-2xl animate-fade-in-up rounded-sm">
+      <div 
+        className="bg-white w-full max-w-2xl max-h-[85vh] overflow-y-auto relative z-10 shadow-2xl animate-fade-in-up rounded-sm"
+        data-lenis-prevent="true"
+      >
         <div className="sticky top-0 bg-white border-b border-[#F2EBE3] p-6 flex justify-between items-center z-20">
           <h2
             id="legal-modal-title"

@@ -29,9 +29,10 @@ export default function Navbar() {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Rooms", href: "/rooms" },
-    { label: "Contact", href: "/contact" },
+    { label: "Dining", href: "/dining" },
     { label: "Amenities", href: "/amenities" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
