@@ -20,7 +20,7 @@ export default function BookingModal({ isOpen, onClose }) {
   if (selectedMealPlan) whatsappMessage += `\nMeal Plan: ${selectedMealPlan}`;
   whatsappMessage += `\n\nPlease share availability and rates.`;
 
-  const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[1]
+  const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[0]
     .replace(/\s/g, "")
     .replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
 

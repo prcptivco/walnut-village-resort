@@ -16,7 +16,7 @@ export default function BookingView() {
   if (selectedMealPlan) whatsappMessage += `\nMeal Plan: ${selectedMealPlan}`;
   whatsappMessage += `\n\nPlease share availability and rates.`;
 
-  const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[1]
+  const whatsappUrl = `https://wa.me/${HOTEL_DATA.contact.phones[0]
     .replace(/\s/g, "")
     .replace("+", "")}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -139,13 +139,13 @@ export default function BookingView() {
                   Need Assistance?
                 </p>
                 <a
-                  href={`tel:${HOTEL_DATA.contact.phones[1].replace(
+                  href={`tel:${HOTEL_DATA.contact.phones[0].replace(
                     /\s/g,
                     ""
                   )}`}
                   className="text-[#2C1810] font-serif text-lg hover:text-[#5D4037] transition-colors"
                 >
-                  {HOTEL_DATA.contact.phones[1]}
+                  {HOTEL_DATA.contact.phones[0]}
                 </a>
               </div>
             </div>

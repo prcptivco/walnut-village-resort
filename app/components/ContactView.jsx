@@ -123,7 +123,7 @@ export default function ContactView() {
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone size={16} className="opacity-0" />{" "}
-                  <span>{HOTEL_DATA.contact.phones[1]} (Reservations)</span>
+                  <span>{HOTEL_DATA.contact.phones[0]} (Reservations)</span>
                 </div>
               </div>
               <div className="flex items-center gap-4">

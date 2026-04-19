@@ -64,7 +64,7 @@ export default function Footer() {
               <Phone size={16} className="shrink-0 mt-1" />
               <div className="flex flex-col gap-1">
                 <span>{HOTEL_DATA.contact.queries_phone} ({HOTEL_DATA.contact.queries_label})</span>
-                <span>{HOTEL_DATA.contact.phones[1]} (Reservations)</span>
+                <span>{HOTEL_DATA.contact.phones[0]} (Reservations)</span>
               </div>
             </li>
             <li className="flex gap-4">
