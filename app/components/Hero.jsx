@@ -25,10 +25,6 @@ const Hero = () => {
 
   const slides = [
     "/images/hero/hero-1.jpeg",
-    "/images/hero/hero-5.jpeg",
-    "/images/hero/hero-2.jpeg",
-    "/images/hero/hero-3.jpeg",
-    "/images/hero/hero-4.jpeg",
   ];
 
   useEffect(() => {

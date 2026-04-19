@@ -35,8 +35,8 @@ export const HOTEL_DATA = {
     }
   },
   contact: {
-    phones: ["+91 88997 79869", "+91 88999 01175"],
-    queries_phone: "+91 8899779869",
+    phones: ["+91 88997 79869"],
+    queries_phone: "+91 7006972875",
     queries_label: "For queries & reservations",
     email: "reservations@walnutvillageresort.com",
     address: "Awura Road, Walnut Village Resort, Movera, Pahalgam, Anantnag, Jammu & Kashmir 192401, India",
